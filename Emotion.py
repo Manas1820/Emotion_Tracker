@@ -9,9 +9,11 @@ Created on Wed May 13 22:13:50 2020
 import cv2
 import numpy as np
 from keras.models import load_model
+import warnings
 
 
 def get_emotion() :
+    warnings.filterwarnings("ignore")
     Emotion='neutral'
     model=load_model('model_5-49-0.62.hdf5')
     mask=cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
