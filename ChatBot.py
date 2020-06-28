@@ -85,9 +85,9 @@ def check_Sentiment_level(Sentiment,Friend,Family_member):
         
         
 if __name__ == '__main__' :
-        
+      
+    Sentiment = 50
     while True :
-        Sentiment = 50   
         current_emotion = e.get_emotion()  
         print("loop is running")
         if current_emotion =='sad' :
